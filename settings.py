@@ -777,7 +777,7 @@ AUDIT_ADMIN_VIEWS = False
 ANALYTICS_IDS = {
     'GOOGLE_ANALYTICS_API_ID': '',
     'KISSMETRICS_KEY': '',
-    'HUBSPOT_API_KEY': '',
+    'HUBSPOT_ACCESS_TOKEN': '',
     'HUBSPOT_API_ID': '',
     'GTM_ID': '',
     'DRIFT_ID': '',
@@ -1231,6 +1231,7 @@ TEMPLATES = [
                 'corehq.util.context_processors.emails',
                 'corehq.util.context_processors.status_page',
                 'corehq.util.context_processors.sentry',
+                'corehq.util.context_processors.bootstrap5',
             ],
             'debug': DEBUG,
             'loaders': [
